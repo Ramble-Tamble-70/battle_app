@@ -1,3 +1,7 @@
 <div> player 1: <%= @player_1 %> </div>
 <div> player 2: <%= @player_2 %> </div>
 <div> <%= @player_2 %> HP: 10 </div>
+<form action="/attack">
+<input type="submit" value="Attack!">
+</form>
+<div> <%= @player_1 %> attacks <%= @player_2 %></div>

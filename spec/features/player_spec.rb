@@ -11,3 +11,11 @@ feature 'See player hit points' do
     expect(page).to have_content "Michael HP: 10"
   end
 end
+
+feature 'See player hit confirmation' do
+  scenario ' See confirmation that player 2 is hit' do
+  sign_in_and_play
+  click_button 'Attack!'
+  expect(page).to have_content "Michael is hit!"
+  end
+end
