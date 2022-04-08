@@ -1,6 +1,7 @@
-require 'game'
-require 'player'
-
+# require 'game'
+# require 'player'
+require_relative '../../lib/player.rb'
+require_relative '../../lib/game.rb'
 describe 'switching the turns' do
     it 'when first player attacks the second' do
         player1 = Player.new("Michael") 
