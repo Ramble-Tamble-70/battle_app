@@ -1,5 +1,5 @@
-<div> <%= @player_2.name %> is hit! </div>
-<%= @player_2.name %> HP: <%= @player_2.HP %>
+<div> <%= $game.next_turn.name %> is hit! </div>
+<%= $game.next_turn_v.name %> HP: <%= $game.next_turn_v.HP %>
 <form action="/play" >
 <input type="submit" value="Ok">
 </form>
